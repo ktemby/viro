@@ -6,11 +6,10 @@ uniform lowp vec4 material_diffuse_surface_color;
 uniform lowp float material_diffuse_intensity;
 uniform lowp float material_alpha;
 
-uniform sampler2D diffuse_texture;
-
 #pragma surface_modifier_uniforms
+#pragma fragment_modifier_uniforms
 
-in lowp vec3 v_normal;
+in lowp mat3 v_tbn;
 in highp vec2 v_texcoord;
 in highp vec3 v_surface_position;
 
@@ -21,10 +20,14 @@ void main() {
     _surface.diffuse_texcoord = v_texcoord;
     _surface.diffuse_intensity = material_diffuse_intensity;
     _surface.alpha = material_alpha;
-    _surface.normal = v_normal;
+    _surface.normal = v_tbn[2];
     _surface.position = v_surface_position;
-    
+
 #pragma surface_modifier_body
 
-    frag_color = lambert_lighting_diffuse_texture(_surface, camera_position, diffuse_texture);
+    lowp vec4 _output_color = lambert_lighting(_surface, camera_position);
+    
+#pragma fragment_modifier_body
+    
+    frag_color = _output_color;
 }
