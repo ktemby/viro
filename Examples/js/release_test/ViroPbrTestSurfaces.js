@@ -23,6 +23,7 @@ import {
  ViroFlexView,
  ViroUtils,
  ViroText,
+ Viro3DObject,
  ViroSphere,
  ViroLightingEnvironment,
 } from 'react-viro';
@@ -30,22 +31,26 @@ import {
 let polarToCartesian = ViroUtils.polarToCartesian;
 var createReactClass = require('create-react-class');
 var ReleaseMenu = require("./ReleaseMenu.js");
-var ViroPbrTest = createReactClass({
+var ViroPbrTestSurfaces = createReactClass({
  getInitialState() {
    return {
-      roughness:0,
-      metalness:0,
       refreshPass:true,
-      envLight:true
+      envLight:true,
+      matMap:"none"
    };
  },
 
  getEnvLight(){
    if (this.state.envLight){
-     return    ((    <ViroLightingEnvironment source={require('./res/ibl_newport_loft.hdr')}/>));
+     console.log("Daniel get the light");
+     return ((<ViroLightingEnvironment source={require('./res/ibl_newport_loft.hdr')}/>));
    }
+   console.log("Daniel NO LIGHT");
  },
 
+/*
+
+*/
  render: function() {
    var mat = "none";
    if (!this.state.refreshPass){
@@ -54,43 +59,50 @@ var ViroPbrTest = createReactClass({
 
    return (
     <ViroScene>
-       {this.getEnvLight()}
        <ViroLightingEnvironment source={require('./res/ibl_newport_loft.hdr')}/>
        <Viro360Image source={require('./res/ibl_newport_loft.hdr')} />
        <ReleaseMenu sceneNavigator={this.props.sceneNavigator}/>
        <ViroNode position={[0,-2, 0]}>
        <ViroImage source={require('./res/poi_dot.png')} position={[0, -4, -2]} transformBehaviors={["billboard"]} onClick={this._showNext} />
-          <ViroText style={styles.baseTextTwo} fontSize={this.state.fontSize}  position={[-2, -1, -2]} width={4} height ={2}
-              text={"Toggle metalness: " + this.state.metalness} onClick={this._toggleMetalness}/>
-          <ViroText style={styles.baseTextTwo} fontSize={this.state.fontSize}  position={[1, -1, -2]} width={4} height ={2}
-              text={"Toggle roughness: " + this.state.roughness} onClick={this._toggleRoughness}/>
-          <ViroText style={styles.baseTextTwo} fontSize={this.state.fontSize}  position={[0, 0, -2]} width={4} height ={2}
-              text={"Toggle Environment light: " + this.state.envLight} onClick={this._toggleEnvLight}/>
+       <ViroText style={styles.baseTextTwo} fontSize={this.state.fontSize}  position={[-1, 0, -2]} width={4} height ={2}
+       text={"Toggle Environment light: " + this.state.envLight} onClick={this._toggleEnvLight}/>
+              <ViroText style={styles.baseTextTwo} fontSize={this.state.fontSize}  position={[1, 0, -2]} width={4} height ={2}
+              text={"Toggle Material Map: " + this.state.envLight} onClick={this._toggleMatMap}/>
               <ViroNode position={[0,0,-3 ]}>
+
+              <Viro3DObject source={require('./res/cylinder_pbr.vrx')}
+                            position={[0, 2, -2.0]}
+                            rotation={[0, 0, 0]}
+                            resources={[require('./res/blinn2_Base_Color.png'),
+                                        require('./res/blinn2_Metallic.png'),
+                                        require('./res/blinn2_Mixed_AO.png'),
+                                        require('./res/blinn2_Normal_DirectX.png'),
+                                        require('./res/blinn2_Roughness.png')
+                                                  ]}
+                            type="VRX" />
+
+
               <ViroSphere
                   position={[0, 0, 0]}
                   scale={[0.5, 0.5, 0.5]}
                   widthSegmentCount={15}
                   heightSegmentCount={15}
                   radius={1}
-                  materials={[mat]} />
+                  materials={[this.state.matMap]} />
               <ViroSphere
                   position={[1.5, 0, 0]}
                   scale={[0.5, 0.5, 0.5]}
                   widthSegmentCount={15}
                   heightSegmentCount={15}
                   radius={1}
-                  materials={[mat]}
-                  />
+                  materials={[this.state.matMap]} />
               <ViroSphere
                   position={[-1.5, 0, 0]}
                   scale={[0.5, 0.5, 0.5]}
                   widthSegmentCount={15}
                   heightSegmentCount={15}
                   radius={1}
-                  materials={[mat]}
-                  />
-
+                  materials={[this.state.matMap]} />
               <ViroOmniLight
                   intensity={300}
                   position={[-5, 5, 1]}
@@ -129,70 +141,32 @@ var ViroPbrTest = createReactClass({
       envLight: !this.state.envLight
    });
  },
-
- _toggleRoughness() {
-   var rough = this.state.roughness + 0.025;
-   if (rough > 1){
-      rough = 0;
-   }
-
-   ViroMaterials.createMaterials({
-     sphere: {
-       roughness: rough,
-       metalness: this.state.metalness,
-       lightingModel: "PBR",
-       diffuseColor: "#ff0000"
-     }
-   });
+ _toggleMatMap(){
+   var finalMap = this.state.matMap == "sphere1" ? "sphere2" : "sphere1";
 
    this.setState({
-      roughness: rough,
-      refreshPass: true
+      matMap: finalMap
    });
-
-   let that = this;
-   setTimeout(function(){
-     that.setState({refreshPass:false});
-   }, 200);
-
  },
-
-  _toggleMetalness() {
-    var metal = this.state.metalness + 0.025;
-    if (metal > 1){
-       metal = 0;
-    }
-
-    ViroMaterials.createMaterials({
-      sphere: {
-        roughness: this.state.roughness,
-        metalness: metal,
-        lightingModel: "PBR",
-        diffuseColor: "#ff0000"
-      }
-    });
-
-    this.setState({
-       metalness:metal,
-       refreshPass: true
-    });
-
-       let that = this;
-       setTimeout(function(){
-       that.setState({refreshPass:false});
-       }, 200);
-
-  },
 });
+//  ambientOcclusion: require('../res/heart_d.jpg'),
 
 ViroMaterials.createMaterials({
-sphere: {
-  roughness: 0,
-  metalness: 0,
-  lightingModel: "PBR",
-  diffuseColor: "#ff0000"
-},
-
+  sphere1: {
+    lightingModel: "PBR",
+    diffuseTexture:  require('./res/iron-rusted4-basecolor.png'),
+    metalnessTexture: require('./res/iron-rusted4-metalness.png'),
+    roughnessTexture: require('./res/iron-rusted4-roughness.png'),
+    normalTexture: require('./res/iron-rusted4-normal.png')
+  },
+  sphere2: {
+    lightingModel: "PBR",
+    diffuseTexture:  require('./res/bamboo-wood-semigloss-albedo.png'),
+    metalnessTexture: require('./res/bamboo-wood-semigloss-metal.png'),
+    roughnessTexture: require('./res/bamboo-wood-semigloss-roughness.png'),
+    normalTexture: require('./res/bamboo-wood-semigloss-normal.png'),
+    ambientOcclusionTexture: require('./res/bamboo-wood-semigloss-ao.png'),
+  },
 none:{
   roughness: 0,
 }
@@ -220,4 +194,4 @@ baseTextTwo: {
 },
 });
 
-module.exports = ViroPbrTest;
+module.exports = ViroPbrTestSurfaces;
