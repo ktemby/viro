@@ -36,7 +36,7 @@
    ViroText,
    ViroAnimations,
    ViroAnimatedComponent,
-   ViroSurface,
+   ViroQuad,
    ViroSkyBox,
    ViroSphere,
    Viro3DObject,
@@ -51,7 +51,7 @@ var createReactClass = require('create-react-class');
 
  var ReleaseMenu = require("./ReleaseMenu.js");
 
- var ViroSurfaceFlexViewTest = createReactClass({
+ var ViroQuadFlexViewTest = createReactClass({
 
    getInitialState() {
      return {
@@ -84,7 +84,7 @@ var createReactClass = require('create-react-class');
                       position={[0,1,0]}
                       scale={[0.3, 0.3, 0.3]}/>
 
-                  <ViroSurface
+                  <ViroQuad
                       position={[-1, 1, 0]}
                       scale={[0.5, 0.5, 0.1]}
                       uvCoordinates={[0,0,2,2]}
@@ -188,4 +188,4 @@ ViroMaterials.createMaterials({
     wrapT: "Mirror"
   }
  });
- module.exports = ViroSurfaceFlexViewTest;
+ module.exports = ViroQuadFlexViewTest;
