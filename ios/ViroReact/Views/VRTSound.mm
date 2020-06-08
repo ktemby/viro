@@ -175,9 +175,9 @@ static NSString *const kWebPrefix = @"http";
         if (data == nullptr) {
             RCTLogError(@"Sound w/ name [%@] was not preloaded", name);
         }
-        else {
-            [self createSoundWithData:data local:false];
-        }
+//        else {
+//            [self createSoundWithData:data local:false];
+//        }
     } else if([_source objectForKey:kUriKey]) {
         NSString *uri = [_source objectForKey:kUriKey];
         if ([uri hasPrefix:kLocalPrefix]) {
@@ -193,7 +193,7 @@ static NSString *const kWebPrefix = @"http";
     
     [self setNativeProps];
 }
-
+/*
 - (void)createSoundWithPath:(NSString *)path resourceType:(VROResourceType)resourceType {
     if (_sound) {
         _sound->pause();
@@ -211,7 +211,7 @@ static NSString *const kWebPrefix = @"http";
     _sound = self.driver->newSound(data, self.soundType);
     _sound->setDelegate(std::make_shared<VROSoundDelegateiOS>(self));
 }
-
+*/
 - (std::shared_ptr<VROSoundData>)getDataForName:(NSString *)name {
     VRTSoundModule *soundModule = [self.bridge moduleForClass:[VRTSoundModule class]];
     return [soundModule dataForName:name];
