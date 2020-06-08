@@ -74,6 +74,7 @@ RCT_EXPORT_MODULE()
     [_view setDebugHUDEnabled:NO];
 }
 
+/* 
 - (void)setView:(VROViewGVR *)view {
     _view = view;
     if (_isShowing) {
@@ -83,7 +84,7 @@ RCT_EXPORT_MODULE()
         [self hide];
     }
 }
-
+*/
 - (dispatch_queue_t)methodQueue {
     return RCTGetUIManagerQueue();
 }
