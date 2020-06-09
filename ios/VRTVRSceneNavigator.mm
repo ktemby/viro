@@ -43,7 +43,7 @@
 
 @implementation VRTVRSceneNavigator {
   id <VROView> _vroView;
-  //VROViewControllerGVR *_gvrController;
+  // VROViewControllerGVR *_gvrController;
 }
 
 - (instancetype)initWithBridge:(RCTBridge *)bridge {
