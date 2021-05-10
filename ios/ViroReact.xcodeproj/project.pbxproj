@@ -563,13 +563,6 @@
 			remoteGlobalIDString = ABFEEA82A6C346B22843FBE0B0582182;
 			remoteInfo = FBReactNativeSpec;
 		};
-		A230928A248F709800A5A81F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06489499588BFA8FD5E63DD6375CD533;
-			remoteInfo = Folly;
-		};
 		A230928C248F709800A5A81F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
@@ -695,6 +688,97 @@
 			proxyType = 2;
 			remoteGlobalIDString = 65D0A19C165FA1126B1360680FE6DB12;
 			remoteInfo = Yoga;
+		};
+		A28EE47C263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CBEFE4F9E22AFDC6347A739BB35FF8C;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		A28EE47E263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93F701CA8EB196D77AE99E094D873E4;
+			remoteInfo = Flipper;
+		};
+		A28EE480263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC12C7E29555A7CFDDEF1EDB5BC2F3DA;
+			remoteInfo = "Flipper-DoubleConversion";
+		};
+		A28EE484263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99D5CD245388DC76AAEF6E1E351A90ED;
+			remoteInfo = "Flipper-Folly";
+		};
+		A28EE486263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E00BE2A3146698E81A8F9D00E8F93A6C;
+			remoteInfo = "Flipper-Glog";
+		};
+		A28EE488263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACBB7F62B267CC7C9BBBAE41DE94743B;
+			remoteInfo = "Flipper-PeerTalk";
+		};
+		A28EE48A263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFDC7746794AB17CFB7150820479DF40;
+			remoteInfo = "Flipper-RSocket";
+		};
+		A28EE48C263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65234B3E668A42D9137B2C7AB051EE37;
+			remoteInfo = FlipperKit;
+		};
+		A28EE48E263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB6FAD8F0183E86ACBFBD8A81BA7BF3A;
+			remoteInfo = libevent;
+		};
+		A28EE490263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1936453FF2A7E3A13063C4917C4D5598;
+			remoteInfo = "RCT-Folly";
+		};
+		A28EE492263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE6D792B6328AAF68E46924D7F466631;
+			remoteInfo = "React-Core-AccessibilityResources";
+		};
+		A28EE494263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 666E72807891C591E025A75410CD2A26;
+			remoteInfo = "React-perflogger";
+		};
+		A28EE496263FE30E00136A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5B3357A1CE67C0BF4AE31936A1BE6888;
+			remoteInfo = YogaKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1304,20 +1388,31 @@
 		8BDD9D9F1E09F39B00A42870 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				A28EE47D263FE30E00136A2F /* libCocoaAsyncSocket.a */,
 				A2309287248F709800A5A81F /* libDoubleConversion.a */,
 				A2309289248F709800A5A81F /* libFBReactNativeSpec.a */,
-				A230928B248F709800A5A81F /* libFolly.a */,
+				A28EE47F263FE30E00136A2F /* libFlipper.a */,
+				A28EE481263FE30E00136A2F /* libFlipper-DoubleConversion.a */,
+				A28EE485263FE30E00136A2F /* libFlipper-Folly.a */,
+				A28EE487263FE30E00136A2F /* libFlipper-Glog.a */,
+				A28EE489263FE30E00136A2F /* libFlipper-PeerTalk.a */,
+				A28EE48B263FE30E00136A2F /* libFlipper-RSocket.a */,
+				A28EE48D263FE30E00136A2F /* libFlipperKit.a */,
 				A230928D248F709800A5A81F /* libglog.a */,
+				A28EE48F263FE30E00136A2F /* liblibevent.a */,
 				8BDD9DA31E09F39B00A42870 /* libPods-ViroReact.a */,
 				131E1ED220B89C190075D8E0 /* libPods-ViroReact_release_tests.a */,
 				1385B2B120CA0A5200C3B6CE /* libPods-ViroReact_static_lib.a */,
+				A28EE491263FE30E00136A2F /* libRCT-Folly.a */,
 				A230928F248F709800A5A81F /* libRCTTypeSafety.a */,
 				A2309291248F709800A5A81F /* libReact-Core.a */,
+				A28EE493263FE30E00136A2F /* AccessibilityResources.bundle */,
 				A2309293248F709800A5A81F /* libReact-CoreModules.a */,
 				A2309295248F709800A5A81F /* libReact-cxxreact.a */,
 				A2309297248F709800A5A81F /* libReact-jsi.a */,
 				A2309299248F709800A5A81F /* libReact-jsiexecutor.a */,
 				A230929B248F709800A5A81F /* libReact-jsinspector.a */,
+				A28EE495263FE30E00136A2F /* libReact-perflogger.a */,
 				A230929D248F709800A5A81F /* libReact-RCTAnimation.a */,
 				A230929F248F709800A5A81F /* libReact-RCTBlob.a */,
 				A23092A1248F709800A5A81F /* libReact-RCTImage.a */,
@@ -1328,6 +1423,7 @@
 				A23092AB248F709800A5A81F /* libReact-RCTVibration.a */,
 				A23092AD248F709800A5A81F /* libReactCommon.a */,
 				A23092AF248F709800A5A81F /* libYoga.a */,
+				A28EE497263FE30E00136A2F /* libYogaKit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1677,7 +1773,7 @@
 		8BE0D44C1DFA0D050032AB99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Viro Media";
 				TargetAttributes = {
 					8BE0D4531DFA0D050032AB99 = {
@@ -1745,13 +1841,6 @@
 			fileType = archive.ar;
 			path = libFBReactNativeSpec.a;
 			remoteRef = A2309288248F709800A5A81F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A230928B248F709800A5A81F /* libFolly.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libFolly.a;
-			remoteRef = A230928A248F709800A5A81F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		A230928D248F709800A5A81F /* libglog.a */ = {
@@ -1878,6 +1967,97 @@
 			fileType = archive.ar;
 			path = libYoga.a;
 			remoteRef = A23092AE248F709800A5A81F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE47D263FE30E00136A2F /* libCocoaAsyncSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaAsyncSocket.a;
+			remoteRef = A28EE47C263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE47F263FE30E00136A2F /* libFlipper.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFlipper.a;
+			remoteRef = A28EE47E263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE481263FE30E00136A2F /* libFlipper-DoubleConversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFlipper-DoubleConversion.a";
+			remoteRef = A28EE480263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE485263FE30E00136A2F /* libFlipper-Folly.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFlipper-Folly.a";
+			remoteRef = A28EE484263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE487263FE30E00136A2F /* libFlipper-Glog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFlipper-Glog.a";
+			remoteRef = A28EE486263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE489263FE30E00136A2F /* libFlipper-PeerTalk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFlipper-PeerTalk.a";
+			remoteRef = A28EE488263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE48B263FE30E00136A2F /* libFlipper-RSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libFlipper-RSocket.a";
+			remoteRef = A28EE48A263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE48D263FE30E00136A2F /* libFlipperKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFlipperKit.a;
+			remoteRef = A28EE48C263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE48F263FE30E00136A2F /* liblibevent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibevent.a;
+			remoteRef = A28EE48E263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE491263FE30E00136A2F /* libRCT-Folly.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCT-Folly.a";
+			remoteRef = A28EE490263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE493263FE30E00136A2F /* AccessibilityResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AccessibilityResources.bundle;
+			remoteRef = A28EE492263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE495263FE30E00136A2F /* libReact-perflogger.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-perflogger.a";
+			remoteRef = A28EE494263FE30E00136A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A28EE497263FE30E00136A2F /* libYogaKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYogaKit.a;
+			remoteRef = A28EE496263FE30E00136A2F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -2493,6 +2673,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2503,6 +2684,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2517,8 +2699,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2549,6 +2731,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2559,6 +2742,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2567,8 +2751,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
