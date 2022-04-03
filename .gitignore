@@ -21,6 +21,7 @@ test/android/local.properties
 .idea
 
 #iOS
+ios/dist/
 ios/Pods/Pods.xcodeproj/xcuserdata/
 ios/Pods/
 ios/ViroReact.xcodeproj/xcuserdata/
