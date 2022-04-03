@@ -51,6 +51,9 @@ Figment/ios/Pods/
 Figment/ios/Podfile.lock
 Figment/ios/ngrokendpoint.txt
 
+# Ruby / CocoaPods
+/ios/Pods/
+/vendor/bundle/
 
 # Node
 node_modules
