@@ -30,6 +30,11 @@ post_install do |installer|
   __apply_Xcode_12_5_M1_post_install_workaround(installer)
 end
 
+  post_install do |installer|
+    react_native_post_install(installer)
+  end
+
+
 target 'ViroReact' do
   common_pods
 end
